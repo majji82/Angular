@@ -1,0 +1,8 @@
+=> A stable and evolving framework...
+
+Angular 2 was released in 2016
+There were new versions since then..They released new major version every 6 months/ 1 year..
+Angular always updated in a backward compatible way..
+
+Angular 14 => Standalone components
+Angular 16 => Signals..these were the major features added recently..

@@ -1,0 +1,36 @@
+What is Angular?
+
+Angular is 
+1. It is front-end Javascript framework [It is collection of packages and rules that helps to build advanced feature rich and highly interactive UI]
+2. It is also collection of tools and features we can use [Ex: CLI, Code Editors, Debugging Tools, IDE Plugins]..
+
+Why Angular?
+
+Why a framework than plain JS?
+
+For simple and trivial websites we don't need Angular. But, framework like Angular helps when the application becomes really complex..
+    It simplifies the process of building complex, highly interactive web user Interfaces.
+
+
+Four most important things why we use Angular?
+
+1. We can write Declarative code..
+With Vanilla JS we have to write step-by-step every single instruction that must be executed by the browser.[Imperative code]..
+With Angular we write declarative code => we define the Target state [output] and also some markup (angular specific instructions) => and also define how they change... Angular do the rest of the job
+
+    In simple words we define the target UI states and how they change..We don't have to manually change everything..
+
+2. Separation of concerns via Components:
+    When working with Angular we build a lot of components. [Custom HTML Elements].. We break complex user Interfaces into simpler parts..and compose them together again. This reduces the complexity of web user interfaces..
+
+    => Reduce the complexity 
+    => Simplify the development process by splitting the work among the team.
+    => Build once and re-use multiple times
+
+3. Some Object-Oriented programming concepts and principles.
+    Dependency Injection, Classes => makes it easy to build complex web applications..
+
+4. Use Typescript
+    Angular uses TypeScript..
+    TS is extension of JS => with strict and strong typing..
+    This helps to detect errors in early stage during the development process.

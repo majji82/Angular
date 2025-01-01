@@ -1,0 +1,30 @@
+Creating an Angular Project:
+
+The Angular team created Angular CLI which is a tool which simplifies the process of creating Angular projects and also used behind the scene whenever we run the project in the server..
+
+    We have to install it in order to create the project..
+
+So in order to install angular, nodejs must be already installed in the local.. [nodejs.org]
+npm install -g @angular/cli
+
+Checking the version: ng --version
+
+Creating a new Project:
+
+ng new project-name
+Ex: ng new my-first-project 
+
+Naming convention:
+
+=> No white spaces
+=> better to use all lower case letters
+
+Environment:
+
+Any Code Editor => Preferably Visual studio Code
+Extensions: Angular Language Service (angular.io), Angular Essentials (John Papa)
+
+Running the project:
+Open the terminal and go to the location where the project is located..and type "npm start"
+
+Don't kill the terminal, as it automatically detects the changes and loads the website whenever we change the code..
