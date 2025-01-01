@@ -1,0 +1,49 @@
+# Node modules in any subdirectory
+**/node_modules/
+
+# Logs
+**/logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs in any subdirectory
+**/dist/
+**/build/
+
+# Angular cache
+**/.angular/cache
+
+# IDE and editor-specific files
+**/.idea/
+**/.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Environment files
+**/src/environments/*.ts
+!**/src/environments/environment.prod.ts
+
+# Generated files
+*.ngsummary.json
+*.ngfactory.ts
+*.ngstyle.ts
+*.shim.ts
+
+# Testing
+**/coverage/
+*.lcov
+karma.conf.js.map
+test-results/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Misc
+*.orig
+*.lock
