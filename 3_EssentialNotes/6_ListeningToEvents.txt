@@ -1,0 +1,25 @@
+Till now we have seen 
+- Creating components
+- Managing components and creating with a command
+- Output content dynamically 
+
+Now along with output the content we also have to know listening to events.
+When we listen to events like click event...we have to perform some functionality which is mostly written in a function in the typescript class..which is called when defining an event..
+
+Defining an event:
+
+(click)="onSelectUser()"
+This event is written where we need to execute it and onSelectUser() is a function which is written in ts..
+
+If on any event if the UI changes then it is called as state..
+
+Changing state in Angular is very simple...We just need to change the values we need to change in the function and then call the function when event occurs..
+
+zone.js?
+
+zone.js checks for the user events, expired timers etc.. When such an event occurs zone.js checks for the changes (update in UI)..This zone.js is automatically used behind the scenes in Angular for state changes..
+
+For updating the state there are 2 ways:
+
+1. Relying on zone.js & Angular's change mechanism
+2. Using Signals to notify angular about the changes..[supported since Angular 16]   

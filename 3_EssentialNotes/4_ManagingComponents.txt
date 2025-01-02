@@ -1,0 +1,5 @@
+We are creating the component html, css and ts files in the app folder...But as the project grows the number of files in the folder increases..
+    So we create sub folders inside the app for the components...
+
+So until now we are creating a component by creating a folder for that component and adding html, css and ts files for that component...Instead of doing this manually we can also do this by adding a command 
+"ng generate component component-name" ex: ng g c user 

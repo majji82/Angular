@@ -1,0 +1,27 @@
+Input => Decorator
+input => from signal...input() function
+
+import {input} from '@angular/core'
+
+avatar = input('default-value') 
+The default value can be an empty string..We can also leave it without passing the default value..
+
+avatar = input<string>(); [This is a typescript thing..called generic]
+avatar = input.required<string>(); // Here we cannot pass an initial value..
+
+
+Note: Input signals are read-only values...They cannot be set (i.e, even the set value doesn't work in the class)
+
+Why input signals?
+
+=> Efficiency [Angular updates only when the signal based value changes]..
+
+
+Changes:
+
+The input from signals must be called by braces...
+Ex: avatar()
+
+If it is set to another variable using computed..then that also called like a signal
+imagePath = computed(()=> { return '/assets/users/' + this.avatar();});
+<img src="imagePath()">

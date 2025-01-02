@@ -1,0 +1,22 @@
+To create a component we basically need three files/ mandatory  files
+
+1. header.component.html
+2. header.component.css 
+3. header.component.ts 
+
+In the ts create a class and then add a @Component Decorator...
+In the component decorator add the html and css file paths to templateUrl and styleUrl
+In addition also add the selector => which maps the html tag to the Class created
+
+Now the HTML contains the markup code and css contains the style code..
+After creating the component add the mapped html tag to index.html 
+
+And also as the main.ts files runs first also add the class to the BootstrapApplication (which is a promise) so that it reflects on the screen
+
+=> But it is not a good idea to add like this.. The final idea is to build it as a component tree which has an app component and all other components are nested inside the app component..
+=> So it is a good idea to call the bootstrap application only once..
+
+How to add one component inside another component?
+
+=> We can add the html tag of one component in the parent component to be displayed..But the tag is not recognized by the angular directly..So we go to the ts file of the app component and we import it there..In the @Component Decorator...
+    Now we can use it directly in that component..

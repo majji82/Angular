@@ -1,0 +1,42 @@
+What is Signal?
+
+=> Signal is a trackable data container. It is an object that stores any value (any type of value, including nested objects)
+=> If any change occurs to that value Angular will be notified. i.e., whenever a change occurs angular will change it in all places wherever the signal is used thus leading in change of state (UI updates0)
+
+Before signals Angular used to detect changes and update the state using zone.js....
+In that case whenever an event occurs angular checks for the changes that needs to be updated in the UI..
+
+How signals work?
+
+=> It performs change detection and UI Update (state change) in a more efficient way..
+=> It got rid of zone detection
+
+Why efficient?
+
+Before signals the Angular has to check everything for every possible event that could occur anywhere..
+
+Note: Signal variables are always executed as functions..
+
+Syntax of signals:
+
+Changes:
+
+selectedUser = DUMMY_USERS[randomIndex]; to
+1. selectedUser = signal(DUMMY_USERS[randomIndex]);
+
+2. From this point we don't use selectedUser directly instead we use selectedUser()
+
+get imagePath()
+{
+    return '/assets/users' + selectedUser.avatar
+}
+
+3. instead we use computed which is specific to signals..
+imagePath = computed(() => '/assets/users/' + selectedUser().avatar)
+
+4. imagePath also is a signal type and must be used like imagePath()
+
+5. this.selectedUser = DUMMY_USERS[random_index]
+is changed to this.selectedUser.set(DUMMY_USERS[random_index])
+
+6. in HTML whenever there is a signal we use variableName along with bracket.. selectedUser()

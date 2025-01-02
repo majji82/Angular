@@ -1,0 +1,24 @@
+We have components which can be used multiple times by just calling their HTML tag multiple times...
+But we can also define component inputs for them and can re-use..
+
+1. Add the properties to the class which we want to set from outside..
+
+Here now we need two strings which we need to set from outside which are avatar and name..
+import { Input } from '@angular/core';
+
+@Input() avatar!: string;
+@Input() name!: string;
+
+This @Input() decorator helps us to set the value from outside..but as we are using typescript we need to set the type and value of the variable..
+    As we know that we set the value later we use the ! mark..to let ts no that the value will be set later..
+
+Now we use multiple users in the app component by supplying names and avatar from outside..So first import it to the ts file..
+    After importing we can use <app-user></app-user> tag as many users as we want and we supply the name and avatar 
+
+Syntax:
+
+<app-user [avatar]="users[0].avatar" [name]="users[0].name" /> 
+Note: users is imported in the ts file..
+
+Now coming to individual user in the app-user we can use either property binding or string interpolation..
+We can use get method as we used earlier for computed values..

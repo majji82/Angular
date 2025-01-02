@@ -1,0 +1,19 @@
+The files which are found in the root level generally are the configuration files..
+Some config files for typescript (should not change unless you know what we are doing)
+
+package.json and package.lock.json which manage the dependencies..
+angular.json => extra configuration settings..[don't need to change]
+editor config => for code editor settings..
+
+.......
+
+src is one of the most imp folder..here is where we write the code..
+
+=> index.html => main html file which loads when visitors visit the website..
+=> styles.css => for applying global styles 
+=> main.ts => typescript code => first code file to be executed when application runs
+=> assets folder => storing assets like images
+=> app folder
+    - build and combine components..
+
+To run the application => npm start

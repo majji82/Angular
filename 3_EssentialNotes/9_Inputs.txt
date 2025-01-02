@@ -1,0 +1,9 @@
+Required and optional inputs:
+
+@Input() avatar!: string;
+
+If we observe this carefully we see that we are using ! mark saying typescript that we will definitely pass the value to the string avatar..But if we don't pass the value..It would be blank in the UI..
+    To avoid this we have a properties required:true for the @Input() decorator..
+
+@Input({required: true}) name!: string;
+This will give error in the IDE if we really don't provide any value.

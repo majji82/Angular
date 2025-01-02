@@ -1,0 +1,15 @@
+=> When anyone visit the website the index.html in the src folder is the first file to load on the screen. But it is almost empty..
+
+It only contains an app-root which is not a standard html element..  The first code to be executed when the application starts is in the main.ts file..
+    But there are no script tags in the index.html file..But the script files are injected by the angular CLI and they are visible when we view page source..
+
+This main.ts file imports AppComponent from app.component.ts.. This typescript file contains the AppComponent class which gets imported into the main.ts file..
+
+What does the app.component.ts file contains?
+
+=> It contains the class which needs to be imported to the main.ts 
+=> It has a decorator above it which has meta-data [Component decorator]
+    One of the main things in the component decorator is the selector
+    selector: 'app-root' [This app-root we found in the first index.html file]..This html element is replaced by this component by looking in the selector..
+
+    Apart from selector we have templateUrl and styleUrl which contains the HTML and CSS files for that particular Component..

@@ -1,0 +1,32 @@
+Note: All the properties we are defining in the component class are available for the HTML file in the templateURL..
+
+So we have array of objects in the dummy users... We can import the userComponent.ts file and we can use it with a variable name without let/var directly with the index..
+
+Outputting the Dynamic component:
+
+We have assigned a user to a variable in the ts..How to output it?
+We have two main ways to output..
+
+1. String Interpolation by using double curly braces..Ex: {{user.name}}
+Syntax:
+{{}}
+
+In this way we can access anything which is present in the ts file into the html file..
+
+2. Property Binding
+
+We cannot use string interpolation in the image part because in the src attribute we have curly braces..
+String interpolation method used to display dynamic output is generally used between the tags..
+
+Syntax for property Binding:
+
+Wrap square braces for the property.. and we can access the content directly in double quotes...
+<img [src] = " 'assets/users/' + selectedUser.avatar ">  This is because it is a path..so we use a fixed string until the path and then the dynamic string for the picture..
+
+
+As a good practice, we don't do computations in the html file...Instead, we do it using the get method..
+get imagePath(){
+    return 'assets/users/' + this.selectedUser.avatar
+}
+
+This is in the class..and this can be used in the html file by the name without calling the braces..
